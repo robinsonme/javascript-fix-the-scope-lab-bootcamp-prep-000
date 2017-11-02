@@ -21,9 +21,10 @@ function add2(n) {
 }
 
 var funkyFunction = function() {
-  return function hiddenFunction() {
+  var hiddenFunction = function() {
     return "FUNKY!"
   }
+  return hiddenFunction
 }
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
